@@ -34,3 +34,23 @@ JavaScript is cool right. Here some GitHub Repos that help you to become better 
 
 10. Modern JavaScript Tutorial
 [GitHub Repo](https://github.com/javascript-tutorial/en.javascript.info)
+
+### Javascript can't sort properly as itself
+
+```javascript
+const nums = [10, 5, 20, 6, 11]
+nums.sort(); //Output: [10, 11, 20, 5, 6]
+
+function accending(x, y) {
+    return x > y ? 1 : -1
+}
+
+function decending(x, y) {
+    return x < y ? 1 : -1
+}
+
+//now you can call it
+nums.sort(accending) //[5, 6, 10, 11, 20]
+
+nums.sort(decending) //[20, 11, 10, 6, 5]
+```
